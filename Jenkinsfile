@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -dit products ./restapi/.'
+        sh 'docker build -it products ./restapi/.'
       }
     }
 
