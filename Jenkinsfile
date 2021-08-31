@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'docker build -t products ./restapi/.'
+        sh 'docker build -dit products ./restapi/.'
       }
     }
 
